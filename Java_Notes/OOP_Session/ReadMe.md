@@ -159,4 +159,8 @@ p.sum();
 
 - Java works in dynamic/late binding which is linking in runtime that's why Java don't have virtual Keyword but her effect exists because all of them are Virtual bu default.
 
+**When I try to polymorphism a member funtion so we have to make our parent member method to be abstrac method which will enforece to child to make an implementation to it. so that the class should be identified to be abstract class.**
+- Abstract class could never create an object.
+- **Abstract class: Class may contain zero or more abstract methods and/or zero or more concrete-have body- methods**
+
 ### Here we complete the real meaning of extension and Polymorphism which helps me to create a generic function.
