@@ -163,4 +163,12 @@ p.sum();
 - Abstract class could never create an object.
 - **Abstract class: Class may contain zero or more abstract methods and/or zero or more concrete-have body- methods**
 
+```java
+public static void main(string[] args){
+    Child p = new Parent(); 
+    p.sum(); // This is not allowed cuz child is extended but parent is limited so it will give me compiler error, because parent doesn't have sum() 
+}
+
+```
+
 ### Here we complete the real meaning of extension and Polymorphism which helps me to create a generic function.
