@@ -32,7 +32,7 @@ class SerratedDisc{
         System.out.println("Hello");
     }
 }
-
+```
 - **Constructor** --> Initialize instance member variables
 - Objects in Java [دئما و ابداااا] in Heap section, All variables are Dynamically allocated.
 - To Initialize a variable:
