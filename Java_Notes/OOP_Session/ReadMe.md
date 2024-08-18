@@ -45,25 +45,28 @@ disc1 = new SerratedDisc(); //Object
 - We don't have Destructor
 
 - Data and Functions could be called as Members
-**Members** Divided to two types
+
+- **Members** Divided to two types
 1. Instance Memebers 
 2. Class Members
-- **Instance Members** :
+1. **Instance Members** :
 1. It's an attribute of the object that differentiate between different objects
 2. Accessed by the Object
 3. Exist in memory when the object is created
 4. Exist in memory by number of created objects if this member was a variable but methods are created only once
-5. This reference is sent to instance member methods **only!!!**
+5. This reference is sent to **instance member methods only!!!**
+
+
 ex
 ```java
 disc1.setSize(disc1,5) //disc1 is sent implicitly to access the right Object.
 disc2.setSize(disc2,10)
 ```
 - **This Reference**: It's the reference to the current instance of the class.
-- **As long as I didn't mention Static identifier so it'snot Static so it could be sent this to her**
+- **As long as I didn't mention Static identifier so it means that it's not Static so it could be sent (this) to her**
 - Shadowing operation 
 
-- **Class/Static Members** : 
+2. **Class/Static Members** : 
 1. It's an attribute of the class that differentiate between different classes[يعنى صفة للكاتيجوري كله يعنى كل الاوبجكت اللى جوه ليها نفس الصفة دى], and this is what is meant by class/static members
 2. Accessed by the name of Class, [بطريقة جربتها و نفعة]could by name of Object --> But bad practice to access using object.
 3. Exist in memory when the class is loaded
@@ -85,6 +88,8 @@ public static serratedDisc create(){
 ------------------------------------------------------------------------------------------------
 ### Inheritance: The process by which one class can inherit the properties and behavior of another class
 - Is to extend the functionality of existing class
+- Inheritence--> Is A Relationship between Child and parent
+* So if we said that, The Dog is an animal. So this relation is inheritence
 - **Side Note**
 - **Obfuscator:Obfiscation which is shuffle the code in a vay that JVM can deal with it as encryption to protect the code from reverse engineering process + Reduce footprint of the code**,but level of difficulty could destroy all work
 - **Decompiler is the tool which used to reverse engineer compiled code**
@@ -92,8 +97,8 @@ public static serratedDisc create(){
 - That's why we need to inheritence cuz we don't have source code always.
 
 - **How to think in Inheritence**
-1. Generalization is the way of thinking from bottom to upper layer such as u start thinking from child class to parent class.
-2. specialization is the way of thinking from upper to bottom layer such as start thinking from parent to child
+1. Generalization: is the way of thinking from **bottom to upper** layer such as u start thinking from **child class to parent class**.
+2. specialization: is the way of thinking from **upper to bottom** layer such as start thinking from **parent to child**
 
 - So Inheritence should achieve two conditions which are
 1. **IS-A**: The child class is a type of parent class
@@ -121,7 +126,7 @@ public Child():Parent(5,10){
      // Not allowed 
 }
 ```
-2. if I sent to child in main Child(5,10,20); , Parent only have
+2. if I sent to child in main Child(5,10,20); , Child only have n1.
 ```java
 public int sum(int n1 , int n2 , int n3){
     return this.n1 + super.n2 + super.n3;
@@ -154,12 +159,12 @@ p.setNo2(2);
 p.sum();
 ```
 - In Compilation --> Compiler will check as a text, that everything exist, that check if p has member called setNo1,2, sum --> Successfull.
-- In run tiime --> Depend on the object we will make late binding which will link to object member.
+- In run time --> Depend on the object we will make late binding which will link to object member.
 - **Late Binding** is the process of linking the method call to the method at runtime.
 
 - Java works in dynamic/late binding which is linking in runtime that's why Java don't have virtual Keyword but her effect exists because all of them are Virtual bu default.
 
-**When I try to polymorphism a member funtion so we have to make our parent member method to be abstrac method which will enforece to child to make an implementation to it. so that the class should be identified to be abstract class.**
+**When I try to polymorphism a member funtion so we have to make our parent member method to be abstract method which will enforece to child to make an implementation to it. so that the class should be identified to be abstract class.**
 - Abstract class could never create an object.
 - **Abstract class: Class may contain zero or more abstract methods and/or zero or more concrete-have body- methods**
 

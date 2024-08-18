@@ -6,23 +6,24 @@
 
 Relations between Classes
 -------------------------
-Composition
-- Full ownership and life time started with object container
+Composition --> Has-A
+- Full ownership and life time started with object container 
+- ex:Let's consider an example of a Car class that uses an Engine class. A car "has an" engine, so the car class will have an instance of the engine class.
 
-Aggregation Has-A
+Aggregation --> It represents a "has-a" relationship, similar to composition, but with a weaker bond,an object is composed of one or more objects, but these objects have an independent lifecycle.
 -Partial ownership with sperated lifetime
+-Ex: Let's consider an example of a Department class that uses an Employee class. A department "has" employees, but employees can exist without the department (e.g., they could move to another department).
 
 Association Use-A
--No Ownership but it methoduse a refernece to another class
+-No Ownership but it method use a refernece to another class
 
 * If we have a shape classes and another class is picture this class has method called draw which take 3 arrays (Rectangle - Circles - Triangles)
 * So what type of relationship --> no ownership so it's Uses-A (Association)
-but what if I have instance member reference and we allocate it by some method and a refernece point to them so it's aggregation
-* Creation happens inside class container so it's Composition because lifetime is attached together.
+but what if I have instance member reference and we **allocate it by some method and a refernece point to them** so it's aggregation
+* **Creation happens inside class container** so it's Composition because lifetime is attached together.
 
 
-- We judge on it based on Ownership and lifetime
-Object from class that has reference to another class and they are created together
+- We judge on it based on Ownership and lifetime Object from class that has reference to another class and they are created together
 
 - Aggregation
 * it will be sent to me and I have a reference to it 
