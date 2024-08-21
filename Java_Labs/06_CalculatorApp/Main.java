@@ -2,10 +2,7 @@
 public class Main{
 
 	public static void main(String[] args){
-		if(args.length == 0){
-			System.out.println("Enter an Operation");
-		}
-		else if ( args.length != 3){
+		 if ( args.length != 3){
 			System.out.println("Error:Enter 2 Operands");
 		
 		}
