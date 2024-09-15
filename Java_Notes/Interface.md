@@ -5,6 +5,7 @@
 Interface --->                                             العقد بين الكلاسيس
 
 ### So Interface is used to group of abstract classed   ->>>             وكأنها ابستراكت كلاس 
+but it's not Abstract class because it has **only Abstracted methods, No concrete class, and it couldnot be Inherited**
 
 Those must be implement
 

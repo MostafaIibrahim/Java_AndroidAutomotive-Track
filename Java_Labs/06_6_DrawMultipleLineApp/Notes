@@ -1,0 +1,3 @@
+
+
+Your Line class extends Thread, so it doesn't have any GUI component capabilities (such as mouse handling methods). Instead, the Applet itself is the GUI component that needs to listen to mouse events and handle drawing??? previously we have created Button as source 
